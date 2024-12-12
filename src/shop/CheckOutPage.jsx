@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-import "./components/Modal.css"
+import "../components/Modal.css"
 
 const CheckOutPage = () => {
     const [show, setShow] = useState(false);

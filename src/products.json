@@ -2,7 +2,7 @@
     
     {
         "id": "c667d3ff-41eb-4cf7-a433-819d959ea768",
-        "category": "Men's shoe",
+        "category": "Mens shoe",
         "name": "ESSENTIAL SHOES",
         "seller": "Zenix",
         "price": 58,
@@ -15,7 +15,7 @@
     },
     {
         "id": "e1dbc7fe-be17-4e0f-9e2d-6ad5dbc102fc",
-        "category": "Men's shoe",
+        "category": "Mens shoe",
         "name": "ESSENTIALS4GAMEDAY SHOES",
         "seller": "Zenix",
         "price": 185,
@@ -28,7 +28,7 @@
     },
     {
         "id": "0298e695-1f9b-49b1-9961-8a8460f95b1c",
-        "category": "Men's shoe",
+        "category": "Mens shoe",
         "name": "TERREX FREE HIKER GORE-TEX HIKING SHOES",
         "seller": "Zenix",
         "price": 132,
@@ -41,7 +41,7 @@
     },
     {
         "id": "3cfe9adc-c27f-4be4-a859-a5c98ce88a27",
-        "category": "Men's shoe",
+        "category": "Mens shoe",
         "name": "4DFWD PULSE SHOES",
         "seller": "Zenix",
         "price": 111,
@@ -250,7 +250,7 @@
     {
         "id": "1b6f1af1-2103-4838-932d-2b98dfdb6c1f",
         "category": "shirt",
-        "name": "RUNNER T-SHIRT",
+        "name": "RUNNER TSHIRT",
         "seller": "Zenix",
         "price": 20,
         "stock": 7,
@@ -263,7 +263,7 @@
     {
         "id": "c6cb80a7-3542-4270-bd2b-920efd5f3f85",
         "category": "shirt",
-        "name": "T-SHIRT (GENDER NEUTRAL)",
+        "name": "TSHIRT (GENDER NEUTRAL)",
         "seller": "Zenix",
         "price": 18,
         "stock": 2,
@@ -340,7 +340,7 @@
     },
     {
         "id": "124e13b9-2d54-4b2f-a74d-a77b362d6ead",
-        "category": "Men's Sneaker",
+        "category": "Mens Sneaker",
         "name": "ULTRABOOST 22 SHOES",
         "seller": "Zenix",
         "price": 420,
@@ -353,7 +353,7 @@
     },
     {
         "id": "13cbc7ed-a61b-4883-9d42-82d7d8642b86",
-        "category": "Men's Sneaker",
+        "category": "Mens Sneaker",
         "name": "LUNAR NEW YEAR ULTRABOOST DNA SHOES",
         "seller": "Zenix",
         "price": 196,
@@ -366,7 +366,7 @@
     },
     {
         "id": "307f166f-1d04-4573-bc37-2f461ea9d4f7",
-        "category": "Men's Sneaker",
+        "category": "Mens Sneaker",
         "name": "SUPERNOVA SHOES",
         "seller": "Zenix",
         "price": 245,
@@ -379,7 +379,7 @@
     },
     {
         "id": "4bf9798f-63bc-4a83-b0c6-6a3b816fe922",
-        "category": "Men's Sneaker",
+        "category": "Mens Sneaker",
         "name": "LITE RACER ADAPT 3.0 SHOES",
         "seller": "Zenix",
         "price": 229,
@@ -392,7 +392,7 @@
     },
     {
         "id": "9496d72b-04ec-41f8-9bc3-0a7c9697be8e",
-        "category": "Men's Sneaker",
+        "category": "Mens Sneaker",
         "name": "4DFWD SHOES",
         "seller": "Zenix",
         "price": 287,
@@ -405,7 +405,7 @@
     },
     {
         "id": "6e5593d3-557b-43cf-8dab-a5140faedfb0",
-        "category": "Men's Sneaker",
+        "category": "Mens Sneaker",
         "name": "KAPTIR 2.0 SHOES",
         "seller": "Zenix",
         "price": 138,
@@ -418,7 +418,7 @@
     },
     {
         "id": "9c0c13c2-54e4-4001-809b-afbd9d84037d",
-        "category": "Men's Sneaker",
+        "category": "Mens Sneaker",
         "name": "4DFWD PULSE SHOES",
         "seller": "Zenix",
         "price": 226,
@@ -431,7 +431,7 @@
     },
     {
         "id": "c9d1f410-d28f-49d9-9b01-d759b5acbeea",
-        "category": "Men's Sneaker",
+        "category": "Mens Sneaker",
         "name": "ZX 1K BOOST SHOES",
         "seller": "Zenix",
         "price": 319,
@@ -444,7 +444,7 @@
     },
     {
         "id": "1564a06b-692f-4f2e-8413-9c8a1cc2da77",
-        "category": "Men's Sneaker",
+        "category": "Mens Sneaker",
         "name": "NMD_R1 V2 SHOES",
         "seller": "Zenix",
         "price": 260,
@@ -457,7 +457,7 @@
     },
     {
         "id": "ac44095f-230e-4502-8816-dea3eaae8320",
-        "category": "Men's Sneaker",
+        "category": "Mens Sneaker",
         "name": "NMD_R1 PRIMEBLUE SHOES",
         "seller": "Zenix",
         "price": 437,
@@ -470,7 +470,7 @@
     },
     {
         "id": "d0803f97-966f-4296-ad31-a7f70fc86fab",
-        "category": "Men's Sneaker",
+        "category": "Mens Sneaker",
         "name": "ESSENTIAL SHOES",
         "seller": "Zenix",
         "price": 146,
@@ -483,7 +483,7 @@
     },
     {
         "id": "8a5b4a9c-76ea-4fbb-9c70-9548de4eab01",
-        "category": "Men's Sneaker",
+        "category": "Mens Sneaker",
         "name": "ESSENTIAL SHOES",
         "seller": "Zenix",
         "price": 109,
@@ -496,7 +496,7 @@
     },
     {
         "id": "b357e19b-4dd9-4fc7-b5c0-9ed5255464ba",
-        "category": "Men's Sneaker",
+        "category": "Mens Sneaker",
         "name": "PRIMEBLUE SST SHOES",
         "seller": "Zenix",
         "price": 63,
@@ -509,7 +509,7 @@
     },
     {
         "id": "e4220958-06d2-4d50-96fa-0163a563f43d",
-        "category": "Men's Sneaker",
+        "category": "Mens Sneaker",
         "name": "ESSENTIAL SHOES",
         "seller": "Zenix",
         "price": 148,
@@ -522,7 +522,7 @@
     },
     {
         "id": "ae69f0e4-559c-4b24-8032-80b63f9b5073",
-        "category": "Men's Sneaker",
+        "category": "Mens Sneaker",
         "name": "KAPTIR 2.0 SHOES",
         "seller": "Zenix",
         "price": 122,
@@ -535,7 +535,7 @@
     },
     {
         "id": "dbf7ab3f-b383-4d95-8ab7-f55fcf6fa5f2",
-        "category": "Men's Sneaker",
+        "category": "Mens Sneaker",
         "name": "ESSENTIAL SHOES",
         "seller": "Zenix",
         "price": 115,
@@ -548,7 +548,7 @@
     },
     {
         "id": "ed6a7ac3-7e67-4e3f-8461-bceb5178be42",
-        "category": "Men's Sneaker",
+        "category": "Mens Sneaker",
         "name": "ESSENTIALS4GAMEDAY SHOES",
         "seller": "Zenix",
         "price": 108,
@@ -561,7 +561,7 @@
     },
     {
         "id": "fd52819a-cb78-4510-ad2f-c5bdd888ae78",
-        "category": "Men's Sneaker",
+        "category": "Mens Sneaker",
         "name": "ESSENTIALS4GAMEDAY SHOES",
         "seller": "Zenix",
         "price": 189,
