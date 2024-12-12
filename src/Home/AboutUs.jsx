@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const subTitle = "Why You Should Choose Us";
 const title = "Become a Marchant";
-const desc = "Take courses on your any device with our app & learn all about business what you want. Just download & install & start to learn";
+const desc = "Take courses on your any device with our app and learn all about business what you want. Just download and install start to learn";
 const btnText = "Apply Now";
 
 const countList = [

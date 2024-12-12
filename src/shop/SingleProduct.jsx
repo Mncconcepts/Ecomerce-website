@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
-import PageHeader from '../components/PageHeader';
+import PageHeader from './components/PageHeader';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
