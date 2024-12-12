@@ -2,27 +2,7 @@ import React, { useState } from 'react'
 import Ratting from '../components/Ratting';
 const reviwtitle = "Add A Review";
 
-let ReviewList = [{
-    imgUrl: "",
-    imgAlt: "Client thumb", name: "",
-    date: "Posted on Jun 10, 2022 at 6:57 am",
-    desc: "Enthusiast build innovativ initiatives before lonterm high-impact awesome theme seo psd porta monetize covalent leadership after without resource.",
-},
-{
-    imgUrl: "",
-    imgAlt: "Client thumb", name: "",
-    date: "Posted on Jun 10, 2022 at 6:57 am",
-    desc: "Enthusiast build innovativ initiatives before lonterm high-impact awesome theme seo psd porta monetize covalent leadership after without resource.",
-},
-{
-    imgUrl: "", imgAlt: "Client thumb", name: "",
-    date: "Posted on Jun 10, 2022 at 6:57 am",
-    desc: "Enthusiast build innovativ initiatives before lonterm high-impact awesome theme seo psd porta monetize covalent leadership after without resource.",
-},
-{
-    imgUrl: "", imgAlt: "Client thumb", name: "", date: "Posted on Jun 10, 2022 at 6:57 am",
-    desc: "Enthusiast build innovativ initiatives before lonterm high-impact awesome theme seo psd porta monetize covalent leadership after without resource.",
-},];
+let ReviewList = [];
 
 const Review = () => {
     const [reviewShow, setReviewShow] = useState(true);

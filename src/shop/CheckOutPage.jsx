@@ -47,7 +47,7 @@ const CheckOutPage = () => {
                                                 aria-controls='visa'
                                                 aria-selected={activeTab === "visa"}
                                                 onClick={() => handleTabChange("visa")}
-                                                href="#visa"><img src="../src/assets/images/payment/pyvisa.png" className='' alt="" width="80" /></a>
+                                                href="#visa"><img src="./src/assets/images/payment/pyvisa.png" className='' alt="" width="80" /></a>
                                         </li>
                                         <li className='nav-item' role='presentation'>
                                             <a className={`nav-link ${activeTab === "paypal" ? "active" : ""}`}
@@ -57,7 +57,7 @@ const CheckOutPage = () => {
                                                 aria-controls='paypal'
                                                 aria-selected={activeTab === "paypal"}
                                                 onClick={() => handleTabChange("paypal")}
-                                                href="#paypal"><img src="../src/assets/images/payment/paypalvisa.png" className='' alt="" width="80" /></a>
+                                                href="#paypal"><img src="./src/assets/images/payment/paypalvisa.png" className='' alt="" width="80" /></a>
                                         </li>
                                     </ul>
 

@@ -4,17 +4,15 @@ import PageHeader from '../components/PageHeader';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-// import { Autoplay } from "swiper/modules"
+
 import ProductDisplay from './ProductDisplay';
 import Review from './Review';
-// import 'swiper/css/navigation';
 
 const SingleProduct = () => {
     const [product, setProduct] = useState([]);
     const { id } = useParams();
-    // console.log(product)
     useEffect(() => {
-        fetch("/src/products.json").then(res => res.json()).then(data => setProduct(data))
+        fetch("./src/products.json").then(res => res.json()).then(data => setProduct(data))
     }, [])
 
     const result = product.filter((p) => p.id === id);
@@ -94,24 +92,24 @@ const SingleProduct = () => {
                                             <div className="card-text">
                                                 <h3 className='ms-3 mt-2 mb-4'>Most Popular Item</h3>
                                                 <div className="col-12">
-                                                    <img src="/src/assets/images/carttwo/01(9).png" className=' ms-3 w-25 ' alt="" />
+                                                    <img src="./src/assets/images/carttwo/01(9).png" className=' ms-3 w-25 ' alt="" />
                                                     <small className='ms-3'>Lorem ipsum, dolor </small>
                                                     <p className="mt-2 ms-3 text-danger ">Essential Striping  Belt</p>
                                                 </div>
 
                                                 <div className="col-12">
-                                                    <img src="/src/assets/images/carttwo/01(2).png" className=' ms-3 w-25 ' alt="" />
+                                                    <img src="./src/assets/images/carttwo/01(2).png" className=' ms-3 w-25 ' alt="" />
                                                     <small className='ms-3'>Lorem ipsum, dolor </small>
                                                     <p className="mt-2 ms-3 text-danger ">Essential Men's Shoe </p>
                                                 </div>
 
                                                 <div className="col-12">
-                                                    <img src="/src/assets/images/carttwo/01(1).png" className=' ms-3 w-25 ' alt="" />
+                                                    <img src="./src/assets/images/carttwo/01(1).png" className=' ms-3 w-25 ' alt="" />
                                                     <small className='ms-3'>Lorem ipsum, dolor </small>
                                                     <p className="mt-2 ms-3 text-danger ">Essential Men's Shoe</p>
                                                 </div>
                                                 <div className="col-12">
-                                                    <img src="/src/assets/images/carttwo/01(5).png" className=' ms-3 w-25 ' alt="" />
+                                                    <img src="./src/assets/images/carttwo/01(5).png" className=' ms-3 w-25 ' alt="" />
                                                     <small className='ms-3'>Lorem ipsum, dolor </small>
                                                     <p className="mt-2 ms-3 text-danger ">Explicite Wrist Watch</p>
                                                 </div>

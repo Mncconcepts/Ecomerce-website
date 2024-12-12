@@ -60,7 +60,7 @@ const SingleBlog = () => {
                                                                             repellat quod nesciunt aut reiciendis.
                                                                         </span>
                                                                         <cite>
-                                                                            <a href="#">...Allexa</a>
+                                                                            <a href="#">Allexa</a>
                                                                         </cite>
                                                                     </blockquote>
                                                                     <span>
@@ -68,16 +68,16 @@ const SingleBlog = () => {
                                                                         adipisicing elit. In aspernatur labore quia tempora qui earum,
                                                                         repellat quod nesciunt aut reiciendis.
                                                                     </span>
-                                                                    <img data-aos='zoom-in' src="/src/assets/images/blog/single/02.jpg" alt="" />
+    
                                                                     <span>Lorem ipsum dolor sit amet consectetur
                                                                         adipisicing elit. In aspernatur labore quia tempora qui earum,
                                                                         repellat quod nesciunt aut reiciendis.
                                                                     </span>
 
-                                                                    <div className="video-thumb mb-4">
-                                                                        <img data-aos='fade-left' src="src/assets/images/blog/single/02.jpg" alt="" />
+                                                                    <div className="video-thumb mb-4 mt-3">
+                                                                        <img data-aos='fade-left' src="./src/assets/images/blog/single/02.jpg" alt="" />
                                                                         <a href="https://youtu.be/BOdUFo1JRLs" className='video-button popup'
-                                                                            target='_blank'>
+                                                                            target='blank'>
                                                                             <i className="fa-solid fa-play"></i>
                                                                         </a>
                                                                     </div>
@@ -167,43 +167,43 @@ const SingleBlog = () => {
                                             <div className="card-text">
                                                 <h3 className='ms-3 mt-5'>Most Popular Trends</h3>
                                                 <div className="col-12">
-                                                    <img data-aos='fade-right' src="/src/assets/images/blog/single/02.jpg" className=' ms-3 w-50 ' alt="" />
+                                                    <img data-aos='fade-right' src="./src/assets/images/blog/single/02.jpg" className=' ms-3 w-50 ' alt="" />
                                                     <small className='ms-3'>Lorem ipsum, dolor </small>
                                                     <p className="mt-2 ms-3 text-danger ">Lorem ipsum, dolor </p>
                                                 </div>
 
                                                 <div className="col-12">
-                                                    <img data-aos='fade-right' src="/src/assets/images/blog/single/01.jpg" className=' ms-3 w-50 ' alt="" />
+                                                    <img data-aos='fade-right' src="./src/assets/images/blog/single/01.jpg" className=' ms-3 w-50 ' alt="" />
                                                     <small className='ms-3'>Lorem ipsum, dolor </small>
                                                     <p className="mt-2 ms-3 text-danger ">Lorem ipsum, dolor </p>
                                                 </div>
 
                                                 <div className="col-12">
-                                                    <img data-aos='fade-right' src="/src/assets/images/blog/single/03.jpg" className=' ms-3 w-50 ' alt="" />
+                                                    <img data-aos='fade-right' src="./src/assets/images/blog/single/03.jpg" className=' ms-3 w-50 ' alt="" />
                                                     <small className='ms-3'>Lorem ipsum, dolor </small>
                                                     <p className="mt-2 ms-3 text-danger ">Lorem ipsum, dolor </p>
                                                 </div>
 
                                                 <div className="col-12">
-                                                    <img data-aos='fade-right' src="/src/assets/images/blog/01.jpg" className=' ms-3 w-50 ' alt="" />
+                                                    <img data-aos='fade-right' src="./src/assets/images/blog/01.jpg" className=' ms-3 w-50 ' alt="" />
                                                     <small className='ms-3'>Lorem ipsum, dolor </small>
                                                     <p className="mt-2 ms-3 text-danger ">Lorem ipsum, dolor </p>
                                                 </div>
 
                                                 <div className="col-12">
-                                                    <img data-aos='fade-right' src="/src/assets/images/blog/02.jpg" className=' ms-3 w-50 ' alt="" />
+                                                    <img data-aos='fade-right' src="./src/assets/images/blog/02.jpg" className=' ms-3 w-50 ' alt="" />
                                                     <small className='ms-3'>Lorem ipsum, dolor </small>
                                                     <p className="mt-2 ms-3 text-danger ">Lorem ipsum, dolor </p>
                                                 </div>
 
                                                 <div className="col-12">
-                                                    <img data-aos='fade-right' src="/src/assets/images/blog/03.jpg" className=' ms-3 w-50 ' alt="" />
+                                                    <img data-aos='fade-right' src="./src/assets/images/blog/03.jpg" className=' ms-3 w-50 ' alt="" />
                                                     <small className='ms-3'>Lorem ipsum, dolor </small>
                                                     <p className="mt-2 ms-3 text-danger ">Lorem ipsum, dolor </p>
                                                 </div>
 
                                                 <div className="col-12">
-                                                    <img data-aos='fade-right' src="/src/assets/images/blog/04.jpg" className=' ms-3 w-50 ' alt="" />
+                                                    <img data-aos='fade-right' src="./src/assets/images/blog/04.jpg" className=' ms-3 w-50 ' alt="" />
                                                     <small className='ms-3'>Lorem ipsum, dolor </small>
                                                     <p className="mt-2 ms-3 text-danger ">Lorem ipsum, dolor </p>
                                                 </div>

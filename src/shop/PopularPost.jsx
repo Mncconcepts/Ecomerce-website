@@ -6,19 +6,19 @@ const title = "Most Popular Post";
 
 const postList =
     [{
-        id: 1, imgUrl: '/src/assets/images/blog/10.jpg', imgAlt: 'lorem',
+        id: 1, imgUrl: './src/assets/images/blog/10.jpg', imgAlt: 'lorem',
         title: 'lorem adipisicing elit. In aspernatur', date: 'Jun 04,2024',
     },
     {
-        id: 2, imgUrl: '/src/assets/images/blog/11.jpg', imgAlt: 'lorem',
+        id: 2, imgUrl: './src/assets/images/blog/11.jpg', imgAlt: 'lorem',
         title: 'lorem adipisicing elit. In aspernatur', date: 'Jun 05,2024',
     },
     {
-        id: 3, imgUrl: '/src/assets/images/blog/12.jpg', imgAlt: 'lorem',
+        id: 3, imgUrl: './src/assets/images/blog/12.jpg', imgAlt: 'lorem',
         title: 'lorem adipisicing elit. In aspernatur', date: 'Jun 06,2024',
     },
     {
-        id: 4, imgUrl: '/src/assets/images/blog/09.jpg', imgAlt: 'lorem',
+        id: 4, imgUrl: './src/assets/images/blog/09.jpg', imgAlt: 'lorem',
         title: 'lorem adipisicing elit. In aspernatur', date: 'Jun 07,2024',
     },]
 

@@ -2,10 +2,10 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 const subTitle = "Save The Day";
 const title = (
-    <h3 className='title'>Join us now, send us messages for your orders and prefered products</h3>
+    <h3 className='title'>Join us now send us messages for your orders and prefered products</h3>
 )
 
-const desc = "Limited Time Offer! Hurry now";
+const desc = "Limited Time Offer Hurry now";
 const Register = () => {
     return (
         <section className='register-section pading-tb pb-0'>
@@ -15,7 +15,7 @@ const Register = () => {
                         <div data-aos='fade-right' className="section-header">
                             <span className='subtitle pt-5 align-item-center'>{subTitle}</span>
                             {title}
-                            <p className=''>{desc}</p>
+                            <p>{desc}</p>
                             <Link to="/sign-up" className='lab-btn'><span className='text-white'>Join Us</span></Link>
                         </div>
                     </div>
