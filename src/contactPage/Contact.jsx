@@ -8,14 +8,14 @@ const conSubTitle = "Contact Us";
 const conTitle = "Fill The Form Below So We Can Get To Know You And Your Needs Better.";
 const btnText = "Send Us Messages";
 const contactList = [{
-    imgUrl: "/src/assets/images/icon/01.png", imgAlt: "contact icon",
+    imgUrl: "./src/assets/images/icon/01.png", imgAlt: "contact icon",
     title: "Office Address", desc: "1201 park street, Fifth Avenue",
 }, {
-    imgUrl: "/src/assets/images/icon/02.png",
+    imgUrl: "./src/assets/images/icon/02.png",
     imgAlt: "contact icon", title: "Phone number", desc: "+22698 745 632,02 982 745",
 },
-{ imgUrl: "/src/assets/images/icon/03.png", imgAlt: "contact icon", title: "Send email", desc: "admin@Zenixstore.com", },
-{ imgUrl: "/src/assets/images/icon/04.png", imgAlt: "contact icon", title: "Our website", desc: "www.Zenixstore.com", },];
+{ imgUrl: "./src/assets/images/icon/03.png", imgAlt: "contact icon", title: "Send email", desc: "admin@Zenixstore.com", },
+{ imgUrl: "./src/assets/images/icon/04.png", imgAlt: "contact icon", title: "Our website", desc: "www.Zenixstore.com", },];
 
 const Contact = () => {
     return (

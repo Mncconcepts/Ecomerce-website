@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Aos from "aos";
 import "aos/dist/aos.css"
-// import { logo } from '../assets/images/logo/zenixlogo3.png';
+// import { logo } from './assets/images/logo/zenixlogo3.png';
 
 const Navitems = () => {
   const [menuToggle, setMenuToggle] = useState(false);

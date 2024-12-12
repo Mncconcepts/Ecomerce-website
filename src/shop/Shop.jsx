@@ -29,7 +29,7 @@ const Shop = () => {
 
     //filter products based on category
     const [SelectedCategory, setSelectedCategory] = useState("All");
-    const menuItem = [...new Set(Data.map((val) => val.category))];
+    const menuItem = [new Set(Data.map((val) => val.category))];
 
     const filterItem = (curcat) => {
         const newItem = Data.filter((newVal) => {

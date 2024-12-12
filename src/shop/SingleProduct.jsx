@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
-import PageHeader from '../components/PageHeader';
+import PageHeader from './components/PageHeader';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -111,7 +111,7 @@ const SingleProduct = () => {
                                                     <p className="mt-2 ms-3 text-danger ">Essential Men's Shoe</p>
                                                 </div>
                                                 <div className="col-12">
-                                                    <img src="/src/assets/images/carttwo/01(5).png" className=' ms-3 w-25 ' alt="" />
+                                                    <img src="./src/assets/images/carttwo/01(5).png" className=' ms-3 w-25 ' alt="" />
                                                     <small className='ms-3'>Lorem ipsum, dolor </small>
                                                     <p className="mt-2 ms-3 text-danger ">Explicite Wrist Watch</p>
                                                 </div>
