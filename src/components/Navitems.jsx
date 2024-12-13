@@ -67,9 +67,6 @@ const Navitems = () => {
 
               {/* menu toggler */}
               <div onClick={() => setMenuToggle(!menuToggle)} className={`header-bar d-lg-none ${menuToggle ? "active" : ""}`}>
-                <span></span>
-                <span></span>
-                <span></span>
               </div>
 
               {/* social toggler */}
