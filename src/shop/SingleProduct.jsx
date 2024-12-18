@@ -1,23 +1,60 @@
-import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { useParams, useNavigate } from 'react-router-dom';
 import PageHeader from '../components/PageHeader';
-
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-
 import ProductDisplay from './ProductDisplay';
 import Review from './Review';
 
 const SingleProduct = () => {
     const [product, setProduct] = useState([]);
+    const [cartItems, setCartItems] = useState([]);
+    const [showPopup, setShowPopup] = useState(false); // For showing the popup
+    const [selectedItem, setSelectedItem] = useState(null); // For storing the selected item details
     const { id } = useParams();
+    const navigate = useNavigate();
+
     useEffect(() => {
-        fetch("./src/products.json").then(res => res.json()).then(data => setProduct(data))
-    }, [])
+        fetch("./src/products.json")
+            .then((res) => res.json())
+            .then((data) => setProduct(data));
+    }, []);
 
     const result = product.filter((p) => p.id === id);
-    // console.log(result)
 
+    const addToCart = (newItem) => {
+        // Get current cart items from LocalStorage
+        const storedCartItems = JSON.parse(localStorage.getItem('cart')) || [];
+
+        // Check if the item already exists in the cart
+        const existingItem = storedCartItems.find((item) => item.id === newItem.id);
+
+        let updatedCart;
+        if (existingItem) {
+            // If item exists, update its quantity
+            updatedCart = storedCartItems.map((item) =>
+                item.id === newItem.id
+                    ? { ...item, quantity: item.quantity + 1 }
+                    : item
+            );
+        } else {
+            // If item does not exist, add it to the cart
+            updatedCart = [...storedCartItems, { ...newItem, quantity: 1 }];
+        }
+
+        // Save updated cart to localStorage
+        localStorage.setItem('cart', JSON.stringify(updatedCart));
+
+        // Set cartItems state and show the popup
+        setCartItems(updatedCart);
+        setSelectedItem(newItem);
+        setShowPopup(true);
+
+        // Redirect to checkout page after showing the popup
+        setTimeout(() => {
+            navigate('/cart-page');
+        }, 3000); // Wait for 3 seconds before redirecting
+    };
 
     return (
         <div>
@@ -25,12 +62,11 @@ const SingleProduct = () => {
             <div className="shop-single padding-tb aside-bg">
                 <div className="container">
                     <div className="row justify-content-center">
-                        <div className='col-lg-8 col-12'>
+                        <div className="col-lg-8 col-12">
                             <article>
                                 <div className="product-details">
                                     <div className="row align-items-center">
                                         <div className="col-md-6 col-12">
-                                            {/* images section for single products */}
                                             <div className="product-thumb">
                                                 <div className="swiper-container pro-single-top">
                                                     <Swiper
@@ -41,36 +77,32 @@ const SingleProduct = () => {
                                                             delay: 2000,
                                                             disableOnInteraction: false
                                                         }}
-
                                                         className="mySwiper">
-                                                        {
-                                                            result.map((item, i) => (
-                                                                <SwiperSlide key={i}>
-                                                                    <div className='single-thumb'>
-                                                                        <img src={item.img} alt="" />
-                                                                    </div>
-                                                                </SwiperSlide>
-                                                            ))
-                                                        }
+                                                        {result.map((item, i) => (
+                                                            <SwiperSlide key={i}>
+                                                                <div className='single-thumb'>
+                                                                    <img src={item.img} alt="" />
+                                                                </div>
+                                                            </SwiperSlide>
+                                                        ))}
                                                     </Swiper>
-                                                    <div className="pro-single-next">
-                                                        <i className="fa-solid fa-chevron-left"></i>
-                                                    </div>
-                                                    <div className="pro-single-prev">
-                                                        <i class="fa-solid fa-chevron-right"></i>
-                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
 
-                                        {/* details section */}
                                         <div className="col-md-6 col-12">
                                             <div className="post-content">
-                                                <div>
-                                                    {
-                                                        result.map(item => <ProductDisplay key={item.id} item={item} />)
-                                                    }
-                                                </div>
+                                                {result.map(item => <ProductDisplay key={item.id} item={item} />)}
+                                                <button
+                                                    onClick={() => addToCart({
+                                                        id: result[0].id,
+                                                        name: result[0].name,
+                                                        price: result[0].price,
+                                                        img: result[0].img
+                                                    })}
+                                                    className="add-to-cart-btn">
+                                                    Add to Cart
+                                                </button>
                                             </div>
                                         </div>
                                     </div>
@@ -82,61 +114,26 @@ const SingleProduct = () => {
                                 </div>
                             </article>
                         </div>
-
-                        {/* right side */}
-                        <div className='col-lg-4 col-12'>
-                            <div className="container">
-                                <div className="row">
-                                    <div className="card">
-                                        <div className="card-title">
-                                            <div className="card-text">
-                                                <h3 className='ms-3 mt-2 mb-4'>Most Popular Item</h3>
-                                                <div className="col-12">
-                                                    <img src="./src/assets/images/carttwo/01(9).png" className=' ms-3 w-25 ' alt="" />
-                                                    <small className='ms-3'>Lorem ipsum, dolor </small>
-                                                    <p className="mt-2 ms-3 text-danger ">Essential Striping  Belt</p>
-                                                </div>
-
-                                                <div className="col-12">
-                                                    <img src="./src/assets/images/carttwo/01(2).png" className=' ms-3 w-25 ' alt="" />
-                                                    <small className='ms-3'>Lorem ipsum, dolor </small>
-                                                    <p className="mt-2 ms-3 text-danger ">Essential Men's Shoe </p>
-                                                </div>
-
-                                                <div className="col-12">
-                                                    <img src="./src/assets/images/carttwo/01(1).png" className=' ms-3 w-25 ' alt="" />
-                                                    <small className='ms-3'>Lorem ipsum, dolor </small>
-                                                    <p className="mt-2 ms-3 text-danger ">Essential Men's Shoe</p>
-                                                </div>
-                                                <div className="col-12">
-                                                    <img src="./src/assets/images/carttwo/01(5).png" className=' ms-3 w-25 ' alt="" />
-                                                    <small className='ms-3'>Lorem ipsum, dolor </small>
-                                                    <p className="mt-2 ms-3 text-danger ">Explicite Wrist Watch</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                            {/* news Channel */}
-                            <div className="col">
-                                <div className="section-wrapper pt-2">
-                                    <h3 className='mt-5'>Subscribe To Our Newsletter</h3>
-                                    <form className='register-form'>
-                                        <input type="email" name='email' placeholder='Input Yor Email' className='reg-input' />
-                                        <button type='submit' className='mt-2 text-white lab-btn'>
-                                            subscribe
-                                        </button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    )
-}
 
-export default SingleProduct
+            {/* Popup Card */}
+            {showPopup && selectedItem && (
+                <div className="popup-card">
+                    <div className="popup-content">
+                        <h4>Item Added to Cart</h4>
+                        <img src={selectedItem.img} alt={selectedItem.name} width={50} />
+                        <p>Name: {selectedItem.name}</p>
+                        <p>Price: ${selectedItem.price}</p>
+                        <p>Quantity: 1</p>
+                        <p>Total: ${selectedItem.price}</p>
+                        <p>Redirecting to checkout page</p>
+                    </div>
+                </div>
+            )}
+        </div>
+    );
+};
+
+export default SingleProduct;

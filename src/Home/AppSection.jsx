@@ -1,28 +1,35 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
+import React from 'react';
+
 const btnText = "Sign Up For Free";
 const title = "Shop Anytime, Anywhere";
-const desc = "Shop on any device with our app & learn all time what you want, download our app install it to get started"
+const desc = "Shop on any device with our app & learn all time what you want, download our app install it to get started";
 
 const AppSection = () => {
   return (
-    <div className='app-section padding-tb'>
-      <div data-aos='fade-right'  className="container">
+    <div className="app-section padding-tb">
+      <div data-aos="fade-right" className="container">
         <div className="section-header text-center">
-          <Link to="/sign-up" className='lab-btn mb-4'>{btnText}</Link>
-          <h2 className='title'>{title}</h2>
-          <p className=''>{desc}</p>
-
+          <a href="/sign-up" className="lab-btn mb-4">{btnText}</a>
+          <h2 className="title">{title}</h2>
+          <p>{desc}</p>
         </div>
-        <div data-aos='fade-right' className="section-wrapper">
-          <ul className='lab-ul'>
-            <li><a href="#"><img  src="./src/assets/images/app/01.jpg" alt="" /></a></li>
-            <li><a href="#"><img src="./src/assets/images/app/02.jpg" alt="" /></a></li>
+        <div data-aos="fade-right" className="section-wrapper">
+          <ul className="lab-ul">
+            <li>
+              <a href="#">
+                <img src="./assets/images/app/01.jpg" alt="App Preview 1" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./assets/images/app/02.jpg" alt="App Preview 2" />
+              </a>
+            </li>
           </ul>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default AppSection
+export default AppSection;

@@ -5,6 +5,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "start": "react-scripts start",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
@@ -13,6 +16,7 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.7.2",
     "@fortawesome/fontawesome-svg-core": "^6.7.1",
     "@fortawesome/react-fontawesome": "^0.2.2",
     "@popperjs/core": "^2.11.8",

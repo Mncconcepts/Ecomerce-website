@@ -8,37 +8,37 @@ const btnText = "Get Started Now";
 
 const categoryList = [
   {
-    imgUrl: './src/assets/images/categoryshowcase/new(2).png',
+    imgUrl: 'public/assets/images/categoryshowcase/new(2).png',
     imgAlt: 'category',
     iconName: 'fa-solid fa-cart-shopping',
     title: 'Wrist watch',
   },
   {
-    imgUrl: './src/assets/images/categoryshowcase/new(4).png',
+    imgUrl: 'public/assets/images/categoryshowcase/new(4).png',
     imgAlt: 'category',
     iconName: 'fa-solid fa-cart-shopping',
     title: 'Shoes',
   },
   {
-    imgUrl: './src/assets/images/categoryshowcase/new(6).png',
+    imgUrl: 'public/assets/images/categoryshowcase/new(6).png',
     imgAlt: 'category',
     iconName: 'fa-solid fa-cart-shopping',
     title: 'Colorful Bags',
   },
   {
-    imgUrl: './src/assets/images/categoryshowcase/new(1).jpg',
+    imgUrl: 'public/assets/images/categoryshowcase/new(1).jpg',
     imgAlt: 'category',
     iconName: 'fa-solid fa-cart-shopping',
     title: 'Outdoor Shoes',
   },
   {
-    imgUrl: './src/assets/images/categoryshowcase/new(7).png',
+    imgUrl: 'public/assets/images/categoryshowcase/new(7).png',
     imgAlt: 'category',
     iconName: 'fa-solid fa-cart-shopping',
     title: 'Asthetic Bags',
   },
   {
-    imgUrl: './src/assets/images/categoryshowcase/new(2).png',
+    imgUrl: 'public/assets/images/categoryshowcase/new(2).png',
     imgAlt: 'category',
     iconName: 'fa-solid fa-cart-shopping',
     title: 'Wrist Watch',

@@ -9,7 +9,7 @@
         "stock": 41,
         "ratings": 5,
         "ratingsCount": 2140,
-        "img": "./assets/images/carttwo/01(2).png",
+        "img": "/assets/images/carttwo/01(2).png",
         "shipping": 49,
         "quantity": 0
     },
@@ -22,7 +22,7 @@
         "stock": 43,
         "ratings": 5,
         "ratingsCount": 2676,
-        "img": "./assets/images/carttwo/01(1).png",
+        "img": "/assets/images/carttwo/01(1).png",
         "shipping": 27,
         "quantity": 0
     },
@@ -35,7 +35,7 @@
         "stock": 1,
         "ratings": 3,
         "ratingsCount": 128,
-        "img": "./assets/images/carttwo/01(3).png",
+        "img": "/assets/images/carttwo/01(3).png",
         "shipping": 13,
         "quantity": 0
     },
@@ -48,7 +48,7 @@
         "stock": 19,
         "ratings": 4,
         "ratingsCount": 894,
-        "img": "./assets/images/carttwo/01(4).png",
+        "img": "/assets/images/carttwo/01(4).png",
         "shipping": 27,
         "quantity": 0
     },
@@ -61,7 +61,7 @@
         "stock": 6,
         "ratings": 5,
         "ratingsCount": 354,
-        "img": "./assets/images/carttwo/01(5).png",
+        "img": "/assets/images/carttwo/01(5).png",
         "shipping": 26,
         "quantity": 0
     },
@@ -74,7 +74,7 @@
         "stock": 3,
         "ratings": 4,
         "ratingsCount": 584,
-        "img": "./assets/images/carttwo/01(6).png",
+        "img": "/assets/images/carttwo/01(6).png",
         "shipping": 33,
         "quantity": 0
     },
@@ -87,7 +87,7 @@
         "stock": 13,
         "ratings": 3,
         "ratingsCount": 1010,
-        "img": "./assets/images/carttwo/01(7).png",
+        "img": "/assets/images/carttwo/01(7).png",
         "shipping": 4,
         "quantity": 0
     },
@@ -100,7 +100,7 @@
         "stock": 14,
         "ratings": 4,
         "ratingsCount": 2422,
-        "img": "./assets/images/carttwo/01(8).png",
+        "img": "/assets/images/carttwo/01(8).png",
         "shipping": 39,
         "quantity": 0
     },
@@ -113,7 +113,7 @@
         "stock": 16,
         "ratings": 3,
         "ratingsCount": 1533,
-        "img": "./assets/images/carttwo/01(9).png",
+        "img": "/assets/images/carttwo/01(9).png",
         "shipping": 33,
         "quantity": 0
     },
@@ -126,7 +126,7 @@
         "stock": 4,
         "ratings": 5,
         "ratingsCount": 1351,
-        "img": "./assets/images/carttwo/01(10).png",
+        "img": "/assets/images/carttwo/01(10).png",
         "shipping": 38,
         "quantity": 0
     },
@@ -139,7 +139,7 @@
         "stock": 8,
         "ratings": 3,
         "ratingsCount": 1798,
-        "img": "./assets/images/carttwo/01(11).png",
+        "img": "/assets/images/carttwo/01(11).png",
         "shipping": 37,
         "quantity": 0
     },
@@ -152,7 +152,7 @@
         "stock": 17,
         "ratings": 5,
         "ratingsCount": 2833,
-        "img": "./assets/images/carttwo/01(12).png",
+        "img": "/assets/images/carttwo/01(12).png",
         "shipping": 10,
         "quantity": 0
     },
@@ -165,7 +165,7 @@
         "stock": 19,
         "ratings": 3,
         "ratingsCount": 4041,
-        "img": "./assets/images/carttwo/01(13).png",
+        "img": "/assets/images/carttwo/01(13).png",
         "shipping": 5,
         "quantity": 0
     },
@@ -178,7 +178,7 @@
         "stock": 10,
         "ratings": 3,
         "ratingsCount": 4505,
-        "img": "./assets/images/carttwo/01(14).png",
+        "img": "/assets/images/carttwo/01(14).png",
         "shipping": 11,
         "quantity": 0
     },
@@ -191,7 +191,7 @@
         "stock": 12,
         "ratings": 4,
         "ratingsCount": 41,
-        "img": "./assets/images/carttwo/01(15).png",
+        "img": "/assets/images/carttwo/01(15).png",
         "shipping": 38,
         "quantity": 0
     },
@@ -204,7 +204,7 @@
         "stock": 17,
         "ratings": 4,
         "ratingsCount": 4985,
-        "img": "./assets/images/carttwo/01(16).png",
+        "img": "/assets/images/carttwo/01(16).png",
         "shipping": 35,
         "quantity": 0
     },
@@ -217,7 +217,7 @@
         "stock": 20,
         "ratings": 3,
         "ratingsCount": 4727,
-        "img": "./assets/images/carttwo/01(17).png",
+        "img": "/assets/images/carttwo/01(17).png",
         "shipping": 2,
         "quantity": 0
     },
@@ -230,7 +230,7 @@
         "stock": 17,
         "ratings": 3,
         "ratingsCount": 4003,
-        "img": "./assets/images/carttwo/01(18).png",
+        "img": "/assets/images/carttwo/01(18).png",
         "shipping": 2,
         "quantity": 0
     },
@@ -243,7 +243,7 @@
         "stock": 6,
         "ratings": 3,
         "ratingsCount": 805,
-        "img": "./assets/images/carttwo/01(19).png",
+        "img": "/assets/images/carttwo/01(19).png",
         "shipping": 6,
         "quantity": 0
     },
@@ -256,7 +256,7 @@
         "stock": 7,
         "ratings": 5,
         "ratingsCount": 3343,
-        "img": "./assets/images/carttwo/01(20).png",
+        "img": "/assets/images/carttwo/01(20).png",
         "shipping": 48,
         "quantity": 0
     },
@@ -269,7 +269,7 @@
         "stock": 2,
         "ratings": 4,
         "ratingsCount": 1590,
-        "img": "./assets/images/carttwo/01(21).png",
+        "img": "/assets/images/carttwo/01(21).png",
         "shipping": 13,
         "quantity": 0
     },
@@ -282,7 +282,7 @@
         "stock": 6,
         "ratings": 3,
         "ratingsCount": 2680,
-        "img": "./assets/images/carttwo/01(22).png",
+        "img": "/assets/images/carttwo/01(22).png",
         "shipping": 39,
         "quantity": 0
     },
@@ -295,7 +295,7 @@
         "stock": 7,
         "ratings": 5,
         "ratingsCount": 365,
-        "img": "./assets/images/carttwo/01(23).png",
+        "img": "/assets/images/carttwo/01(23).png",
         "shipping": 23,
         "quantity": 0
     },
@@ -308,7 +308,7 @@
         "stock": 3,
         "ratings": 4,
         "ratingsCount": 465,
-        "img": "./assets/images/carttwo/01(24).png",
+        "img": "/assets/images/carttwo/01(24).png",
         "shipping": 36,
         "quantity": 0
     },
@@ -321,7 +321,7 @@
         "stock": 10,
         "ratings": 3,
         "ratingsCount": 346,
-        "img": "./assets/images/carttwo/01(25).png",
+        "img": "/assets/images/carttwo/01(25).png",
         "shipping": 42,
         "quantity": 0
     },
@@ -334,7 +334,7 @@
         "stock": 15,
         "ratings": 5,
         "ratingsCount": 234,
-        "img": "./assets/images/carttwo/01(26).png",
+        "img": "/assets/images/carttwo/01(26).png",
         "shipping": 21,
         "quantity": 0
     },
@@ -347,7 +347,7 @@
         "stock": 20,
         "ratings": 4,
         "ratingsCount": 3725,
-        "img": "./assets/images/jum1.png",
+        "img": "/assets/images/jum1.png",
         "shipping": 1,
         "quantity": 0
     },
@@ -360,7 +360,7 @@
         "stock": 19,
         "ratings": 5,
         "ratingsCount": 4355,
-        "img": "./assets/images/jum2.png",
+        "img": "/assets/images/jum2.png",
         "shipping": 14,
         "quantity": 0
     },
@@ -373,7 +373,7 @@
         "stock": 20,
         "ratings": 4,
         "ratingsCount": 3972,
-        "img": "./assets/images/jum3.png",
+        "img": "/assets/images/jum3.png",
         "shipping": 1,
         "quantity": 0
     },
@@ -386,7 +386,7 @@
         "stock": 10,
         "ratings": 5,
         "ratingsCount": 1764,
-        "img": "./assets/images/jum4.png",
+        "img": "/assets/images/jum4.png",
         "shipping": 32,
         "quantity": 0
     },
@@ -399,7 +399,7 @@
         "stock": 11,
         "ratings": 4,
         "ratingsCount": 799,
-        "img": "./assets/images/jum5.png",
+        "img": "/assets/images/jum5.png",
         "shipping": 49,
         "quantity": 0
     },
@@ -412,7 +412,7 @@
         "stock": 19,
         "ratings": 3,
         "ratingsCount": 4372,
-        "img": "./assets/images/jum6.png",
+        "img": "/assets/images/jum6.png",
         "shipping": 19,
         "quantity": 0
     },
@@ -425,7 +425,7 @@
         "stock": 1,
         "ratings": 4,
         "ratingsCount": 2870,
-        "img": "./assets/images/jum7.png",
+        "img": "/assets/images/jum7.png",
         "shipping": 15,
         "quantity": 0
     },
@@ -438,7 +438,7 @@
         "stock": 7,
         "ratings": 4,
         "ratingsCount": 1360,
-        "img": "./assets/images/jum7.png",
+        "img": "/assets/images/jum7.png",
         "shipping": 50,
         "quantity": 0
     },
@@ -451,7 +451,7 @@
         "stock": 4,
         "ratings": 5,
         "ratingsCount": 1976,
-        "img": "./assets/images/jum8.png",
+        "img": "/assets/images/jum8.png",
         "shipping": 46,
         "quantity": 0
     },
@@ -464,7 +464,7 @@
         "stock": 1,
         "ratings": 4,
         "ratingsCount": 565,
-        "img": "./assets/images/jum9.png",
+        "img": "/assets/images/jum9.png",
         "shipping": 36,
         "quantity": 0
     },
@@ -477,7 +477,7 @@
         "stock": 15,
         "ratings": 5,
         "ratingsCount": 3702,
-        "img": "./assets/images/jum10.png",
+        "img": "/assets/images/jum10.png",
         "shipping": 29,
         "quantity": 0
     },
@@ -490,7 +490,7 @@
         "stock": 6,
         "ratings": 5,
         "ratingsCount": 1688,
-        "img": "./assets/images/jum11.png",
+        "img": "/assets/images/jum11.png",
         "shipping": 48,
         "quantity": 0
     },
@@ -503,7 +503,7 @@
         "stock": 46,
         "ratings": 4,
         "ratingsCount": 50,
-        "img": "./assets/images/jum12.png",
+        "img": "/assets/images/jum12.png",
         "shipping": 20,
         "quantity": 0
     },
@@ -516,7 +516,7 @@
         "stock": 41,
         "ratings": 3,
         "ratingsCount": 4483,
-        "img": "./assets/images/jum13.png",
+        "img": "/assets/images/jum13.png",
         "shipping": 8,
         "quantity": 0
     },
@@ -529,7 +529,7 @@
         "stock": 43,
         "ratings": 4,
         "ratingsCount": 1239,
-        "img": "./assets/images/jum14.png",
+        "img": "/assets/images/jum14.png",
         "shipping": 27,
         "quantity": 0
     },
@@ -542,7 +542,7 @@
         "stock": 26,
         "ratings": 5,
         "ratingsCount": 4557,
-        "img": "./assets/images/jum15.png",
+        "img": "/assets/images/jum15.png",
         "shipping": 33,
         "quantity": 0
     },
@@ -555,7 +555,7 @@
         "stock": 5,
         "ratings": 3,
         "ratingsCount": 3383,
-        "img": "./assets/images/jum16.png",
+        "img": "/assets/images/jum16.png",
         "shipping": 26,
         "quantity": 0
     },
@@ -568,7 +568,7 @@
         "stock": 27,
         "ratings": 3,
         "ratingsCount": 1974,
-        "img": "./assets/images/jum17.png",
+        "img": "/assets/images/jum17.png",
         "shipping": 20,
         "quantity": 0
     }

@@ -21,7 +21,6 @@ const ProductCards = ({ GridList, products }) => {
                   <Link to={`/shop/${product.id}`}><i className="fa-solid fa-eye"></i></Link>
                   <a href="#">
                   <i className="fa-solid fa-heart"></i>
-                  {/* <Link to="/cart-page"><i className="fa-solid fa-star-of-life"></i></Link> */}
                   </a>
                 </div>
               </div>
@@ -53,7 +52,6 @@ const ProductCards = ({ GridList, products }) => {
                   <Link to={`/shop/${product.id}`}><i className="fa-solid fa-eye"></i></Link>
                   <a href="#">
                   <i className="fa-solid fa-heart"></i>
-                  {/* <Link to="/cart-page"><i className="fa-solid fa-star-of-life"></i></Link> */}
                   </a>
                 </div>
               </div>

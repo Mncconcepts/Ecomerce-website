@@ -1,7 +1,7 @@
-import React from 'react'
-import Data from '../products.json'
+import React from 'react';
+import Data from '../products.json';
 
-const ShopCart = ({ filterItem, setItems, menuItems, setProducts, SelectedCategory }) => {
+const ShopCart = ({ filterItem, setProducts, SelectedCategory, categories }) => {
     return (
         <>
             <div className="widget-header">
@@ -10,20 +10,21 @@ const ShopCart = ({ filterItem, setItems, menuItems, setProducts, SelectedCatego
             <div>
                 <button onClick={() => setProducts(Data)} className={`m-2 ms-2 d-block ${SelectedCategory === "All" ? "bg-danger" : ""}`}>All</button>
             </div>
-            <div className=''>
-            <span className='ms-2 m-2 btn btn-danger'>Tshirt</span>
-            <span className='ms-0 m-2 btn btn-danger'>Shoes</span>
-            <span className='ms-0 m-2 btn btn-danger'>Hoodie</span>
-            <span className='ms-0 m-2 btn btn-danger'>Cap</span>
-            <span className='ms-2 m-2 btn btn-danger'>Chain</span>
-            <span className='ms-0 m-2 btn btn-danger'>Trouser</span>
-            <span className='ms-0 m-2 btn btn-danger'>cloths</span>
-            <span className='ms-0 m-2 btn btn-danger'>Bags</span>
-            <span className='ms-2 m-2 btn btn-danger'>Wrist watch</span>
-            <span className='ms-0 m-2 btn btn-danger'>Jackets</span>
-            </div>     
+            <div className="category-buttons">
+                {/* Render category buttons dynamically */}
+                {categories.map((category, index) => (
+                    <button
+                        key={index}
+                        onClick={() => filterItem(category)}
+                        className={`m-2 btn ${SelectedCategory === category ? "btn-danger" : "btn-outline-danger"
+                            }`}
+                    >
+                        {category}
+                    </button>
+                ))}
+            </div>
         </>
-    )
-}
+    );
+};
 
-export default ShopCart
+export default ShopCart;

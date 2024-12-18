@@ -7,7 +7,7 @@ const title = "Our Products";
 
 const ProductData = [
     {
-        imgUrl: './src/assets/images/categoryshowcase/new(1).png',
+        imgUrl: 'public/assets/images/categoryshowcase/new(1).png',
         cate: 'Wrist Watch',
         title: 'Essential wrist watch',
         author: 'assets/images/course/author/04.jpg',
@@ -17,7 +17,7 @@ const ProductData = [
     },
 
     {
-        imgUrl: './src/assets/images/categoryshowcase/new(1).jpg',
+        imgUrl: 'public/assets/images/categoryshowcase/new(1).jpg',
         cate: 'Shoes',
         title: 'Essential Outdoor Shoes',
         author: 'assets/images/course/author/05.jpg',
@@ -26,7 +26,7 @@ const ProductData = [
         id: 5,
     },
     {
-        imgUrl: './src/assets/images/categoryshowcase/new(2).png',
+        imgUrl: 'public/assets/images/categoryshowcase/new(2).png',
         cate: 'Wrist Watch',
         title: 'Essential wrist watch',
         author: 'assets/images/course/author/06.jpg',
@@ -35,7 +35,7 @@ const ProductData = [
         id: 6,
     },
     {
-        imgUrl: './src/assets/images/categoryshowcase/new(3).png',
+        imgUrl: 'public/assets/images/categoryshowcase/new(3).png',
         cate: 'Wrist Watch',
         title: 'Essential wrist watch',
         author: 'assets/images/course/author/01.jpg',
@@ -44,7 +44,7 @@ const ProductData = [
         id: 7,
     },
     {
-        imgUrl: './src/assets/images/categoryshowcase/new(4).png',
+        imgUrl: 'public/assets/images/categoryshowcase/new(4).png',
         cate: 'Shoes',
         title: 'Casual Shoe',
         author: 'assets/images/course/author/02.jpg',
@@ -53,7 +53,7 @@ const ProductData = [
         id: 8,
     },
     {
-        imgUrl: './src/assets/images/categoryshowcase/new(5).png',
+        imgUrl: 'public/assets/images/categoryshowcase/new(5).png',
         cate: 'Shoes',
         title: 'Premier Shoe',
         author: 'assets/images/course/author/01.jpg',
@@ -62,7 +62,7 @@ const ProductData = [
         id: 1,
     },
     {
-        imgUrl: './src/assets/images/categoryshowcase/new(6).png',
+        imgUrl: 'public/assets/images/categoryshowcase/new(6).png',
         cate: 'Bags',
         title: 'Asthetic Bags',
         author: 'assets/images/course/author/02.jpg',
@@ -71,7 +71,7 @@ const ProductData = [
         id: 2,
     },
     {
-        imgUrl: './src/assets/images/categoryshowcase/new(7).png',
+        imgUrl: 'public/assets/images/categoryshowcase/new(7).png',
         cate: 'Bags',
         title: 'Asthetic Bags',
         author: 'src/assets/images/categoryTab/brand/apple.png',
@@ -98,8 +98,8 @@ const CategoryShow = () => {
     };
     return (
         <div className='course-section style-3 padding-tb'>
-            <div className='course-shape one'><img src="./src/assets/images/shape-img/icon/01.png" alt="" /></div>
-            <div className='course-shape two'><img src="./src/assets/images/shape-img/icon/02(1).png" alt="" /></div>
+            <div className='course-shape one'><img src="public/assets/images/shape-img/icon/01.png" alt="" /></div>
+            <div className='course-shape two'><img src="public/assets/images/shape-img/icon/02(1).png" alt="" /></div>
 
 
             {/* main section */}
@@ -140,7 +140,7 @@ const CategoryShow = () => {
 
                                         {/* content */}
                                         <div className="course-content">
-                                            <Link to={'/shop/${product.id}'}><h5>{product.title}</h5></Link>
+                                            <Link to={`/shop/${product.id}`}><h5>{product.title}</h5></Link>
                                             <div className='course-footer'>
                                                 <div className='course-author'>
                                                     <Link to="/" className='ca-name'>{product.brand}</Link>

@@ -663,7 +663,6 @@ footer.style-2 .footer-top .footer-item.twitter-post .footer-inner .footer-conte
 a {
     display: inline-block
 }
-
 .widget.widget-post ul.widget-wrapper li .post-content a h6,
 .post-item.style-2 .post-inner .post-content h3,
 .post-item .post-inner .post-content h4,
@@ -671,14 +670,16 @@ a {
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
-    text-overflow: ellipsis
+    text-overflow: ellipsis;
+    overflow: hidden; /* Add this to ensure proper truncation */
 }
 
-.post-item.style-2 .post-inner .post-content a>h2 {
+.post-item.style-2 .post-inner .post-content a > h2 {
     display: -webkit-box;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
-    text-overflow: ellipsis
+    text-overflow: ellipsis;
+    overflow: hidden; /* Add this to ensure proper truncation */
 }
 
 .news-letter .section-wrapper .news-form form .nf-list input[type=submit],
@@ -9599,6 +9600,33 @@ footer.style-2 .footer-top.dark-view * {
   button:hover {
     background-color: #0056b3;
   }
+
+  .popup-card {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+
+.popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+.popup-content img {
+    margin-bottom: 10px;
+}
+
   
 
 /*# sourceMappingURL=style.min.css.map */

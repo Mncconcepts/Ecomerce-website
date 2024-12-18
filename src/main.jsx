@@ -1,8 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { createRoot } from 'react-dom/client'
 import App from './App.jsx'
 import './index.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 
 // bootstrap css
@@ -21,9 +22,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Home from "./Home/Home.jsx";
-import Blog from './blog/Blog.jsx';
 import Shop from './shop/Shop.jsx';
-import SingleBlog from './blog/SingleBlog.jsx';
 import About from './about/About.jsx';
 import Contact from './contactPage/Contact.jsx';
 import SingleProduct from './shop/SingleProduct.jsx';
@@ -41,15 +40,6 @@ const router = createHashRouter([
       {
         path: "/home",
         element: <Home />
-      },
-      {
-        path: "/blog",
-        element: <Blog />
-      },
-
-      {
-        path: "/blog/:id",
-        element: <SingleBlog />
       },
       {
         path: "/shop",

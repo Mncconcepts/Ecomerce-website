@@ -1,87 +1,124 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import Aos from "aos";
-import "aos/dist/aos.css"
-// import { logo } from './assets/images/logo/zenixlogo3.png';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
-const Navitems = () => {
+const Navitems = ({ user }) => {
   const [menuToggle, setMenuToggle] = useState(false);
   const [socialToggle, setSocialToggle] = useState(false);
   const [headerFixed, setHeaderFixed] = useState(false);
-  useEffect(()=>{
-   Aos.init({duration:1000})
-  },[])
 
-  // add event Listener
-  window.addEventListener("scroll", () => {
-    if (window.scrollY > 200) {
-      setHeaderFixed(true);
-    } else {
-      setHeaderFixed(false)
-    }
-  })
+  // Initialize AOS animations
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
+
+  // Header fixed on scroll logic
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 200) {
+        setHeaderFixed(true);
+      } else {
+        setHeaderFixed(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    // Cleanup the event listener
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
-    <header className={`header-section style-4 ${headerFixed ? "header-fixed fadeInUp" : ""}`}>
-      {/* header top start */}
-      <div className={`header-top d-md-none ${socialToggle ? "open" : ""}`}>
-        <div className='container'>
+    <header className={`header-section style-4 ${headerFixed ? 'header-fixed fadeInUp' : ''}`}>
+      {/* Header Top Section */}
+      <div className={`header-top d-md-none ${socialToggle ? 'open' : ''}`}>
+        <div className="container">
           <div className="header-top-area">
-            <Link to="/sign-up" className='lab-btn me-3'><span className='text-white'>Create Account</span></Link>
+            <Link to="/sign-up" className="lab-btn me-3">
+              <span className="text-white">Create Account</span>
+            </Link>
             <Link to="/login">Log in</Link>
           </div>
         </div>
       </div>
 
-      {/* header buttom */}
-      <div className='header-buttom'>
-        <div className='container'>
-          <div className='header-wrapper'>
+      {/* Header Bottom Section */}
+      <div className="header-buttom">
+        <div className="container">
+          <div className="header-wrapper">
+            {/* Logo */}
             <div>
-          <h3 className='mt-2'>
-            <span>ZENIX STORE</span>
-          </h3>
-         </div>
-            {/* logo section */}
-            {/* <div className='logo-search-acte'>
-              <div className='logo'>
-                <link to={"/"}>
-                  <img src={logo} alt="" />
-                </link>
-              </div>
-            </div> */}
+              <h3 className="mt-2">
+                ZENIX <span className="text-danger">STORE</span>
+              </h3>
+            </div>
 
-            {/* menu area */}
+            {/* Menu Section */}
             <div className="menu-area">
               <div className="menu">
-                <ul className={`lab-ul ${menuToggle ? "active" : ""}`}>
-                  <li> <Link to="/home">Home</Link></li>
-                  <li> <Link to="/shop">Shop</Link></li>
-                  <li> <Link to="/blog">Blog</Link></li>
-                  <li> <Link to="/about">About</Link></li>
-                  <li> <Link to="/contact">Contact</Link></li>
+                <ul className={`lab-ul ${menuToggle ? 'active' : ''}`}>
+                  <li>
+                    <Link to="/home">Home</Link>
+                  </li>
+                  <li>
+                    <Link to="/shop">Shop</Link>
+                  </li>
+                  <li>
+                    <Link to="/about">About</Link>
+                  </li>
+                  <li>
+                    <Link to="/contact">Contact</Link>
+                  </li>
                 </ul>
               </div>
-              <Link to="/sign-up" className="lab-btn me-3 d-none d-md-block text-white">Create Account</Link>
-              <Link to="/login" className="lab-btn text-white d-none d-md-block">Login</Link>
 
-              {/* menu toggler */}
-              <div onClick={() => setMenuToggle(!menuToggle)} className={`header-bar d-lg-none ${menuToggle ? "active" : ""}`}>
+              {/* Logged-In User Profile or Login Button */}
+              <div className="user-section d-flex align-items-center">
+                {user ? (
+                  <div className="profile">
+                    <img
+                      src={user.imageUrl}
+                      alt="Profile"
+                      className="profile-img"
+                      width={40}
+                      height={40}
+                      style={{ borderRadius: '50%' }}
+                    />
+                    <span className="ms-2">{user.email}</span>
+                  </div>
+                ) : (
+                  <>
+                    <Link to="/sign-up" className="lab-btn me-3 d-none d-md-block text-white">
+                      Create Account
+                    </Link>
+                    <Link to="/login" className="lab-btn text-white d-none d-md-block">
+                      Login
+                    </Link>
+                  </>
+                )}
               </div>
 
-              {/* social toggler */}
+              {/* Menu Toggler */}
+              <div
+                onClick={() => setMenuToggle(!menuToggle)}
+                className={`header-bar d-lg-none ${menuToggle ? 'active' : ''}`}
+              >
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+
+              {/* Social Toggler */}
               <div className="ellepsis-bar d-md-none" onClick={() => setSocialToggle(!socialToggle)}>
-              <i className="fa-solid fa-circle-info"></i>
+                <i className="fa-solid fa-circle-info"></i>
               </div>
             </div>
           </div>
         </div>
       </div>
-
     </header>
   );
 };
-
-
 
 export default Navitems;

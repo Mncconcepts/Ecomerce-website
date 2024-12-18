@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import { HashRouter as Router, Link } from 'react-router-dom'; // Use
 
 export const Search = ({products, GridList }) => {
     const [searchTerm, setSearchTerm] = useState("");

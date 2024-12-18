@@ -11,19 +11,19 @@ const expareance = "Years Of Experiences";
 
 const aboutList = [
     {
-        imgUrl: './src/assets/images/about/icon/01.jpg',
+        imgUrl: './assets/images/about/icon/01.jpg',
         imgAlt: 'about icon zenixstore',
         title: 'Skilled Instructors',
         desc: 'Distinctively provide acces mutfuncto users whereas communicate leveraged services',
     },
     {
-        imgUrl: './src/assets/images/about/icon/02.jpg',
+        imgUrl: './assets/images/about/icon/02.jpg',
         imgAlt: 'about icon zenixstore',
         title: 'Get Certificate',
         desc: 'Distinctively provide acces mutfuncto users whereas communicate leveraged services',
     },
     {
-        imgUrl: './src/assets/images/about/icon/03.jpg',
+        imgUrl: './assets/images/about/icon/03.jpg',
         imgAlt: 'about icon zenixstore',
         title: 'Online Classes',
         desc: 'Distinctively provide acces mutfuncto users whereas communicate leveraged services',
@@ -41,10 +41,10 @@ const About = () => {
                         <div className="col">
                             <div className="about-left">
                                 <div className="about-thumb">
-                                    <img className='' src="./src/assets/images/bg-img/21.jpg" alt="" />
+                                    <img className='' src="./assets/images/bg-img/21.jpg" alt="" />
                                 </div>
                                 <div className='abs-thumb'>
-                                    <img src="./src/assets/images/about/02.jpg" alt="" />
+                                    <img src="./assets/images/about/02.jpg" alt="" />
                                 </div>
                                 <div className="about-left-content">
                                     <h3>{year}</h3>
