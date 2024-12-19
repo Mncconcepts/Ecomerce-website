@@ -1,19 +1,18 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import Aos from 'aos';
-import 'aos/dist/aos.css';
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Navitems = ({ user }) => {
   const [menuToggle, setMenuToggle] = useState(false);
   const [socialToggle, setSocialToggle] = useState(false);
   const [headerFixed, setHeaderFixed] = useState(false);
 
-  // Initialize AOS animations
+
   useEffect(() => {
     Aos.init({ duration: 1000 });
   }, []);
 
-  // Header fixed on scroll logic
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 200) {
@@ -22,13 +21,14 @@ const Navitems = ({ user }) => {
         setHeaderFixed(false);
       }
     };
-
-    window.addEventListener('scroll', handleScroll);
-
-    // Cleanup the event listener
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Function to close the menu when an item is clicked
+  const handleMenuClose = () => {
+    setMenuToggle(false);
+  };
   return (
     <header className={`header-section style-4 ${headerFixed ? 'header-fixed fadeInUp' : ''}`}>
       {/* Header Top Section */}
@@ -58,16 +58,16 @@ const Navitems = ({ user }) => {
             <div className="menu-area">
               <div className="menu">
                 <ul className={`lab-ul ${menuToggle ? 'active' : ''}`}>
-                  <li>
+                  <li onClick={handleMenuClose}>
                     <Link to="/home">Home</Link>
                   </li>
-                  <li>
+                  <li onClick={handleMenuClose}>
                     <Link to="/shop">Shop</Link>
                   </li>
-                  <li>
+                  <li onClick={handleMenuClose}>
                     <Link to="/about">About</Link>
                   </li>
-                  <li>
+                  <li onClick={handleMenuClose}>
                     <Link to="/contact">Contact</Link>
                   </li>
                 </ul>
