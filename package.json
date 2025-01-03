@@ -1,6 +1,6 @@
 {
   "name": "zenix-store",
-  "homepage": ".",
+  "homepage": "https://github.com/Mncconcepts/Ecomerce-website",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -17,7 +17,8 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.7.2",
-    "@fortawesome/fontawesome-svg-core": "^6.7.1",
+    "@fortawesome/fontawesome-svg-core": 
+"^6.7.1",
     "@fortawesome/react-fontawesome": "^0.2.2",
     "@popperjs/core": "^2.11.8",
     "aos": "^2.3.4",
